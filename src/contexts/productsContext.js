@@ -3,7 +3,8 @@ import axios from "axios";
 
 export const productsContext = React.createContext();
 
-const API = "http://localhost:8000/data";
+// const API = "http://localhost:8000/data";
+const API = "https://makers-deploy-aibonya.herokuapp.com/data";
 
 const INIT_STATE = {
   products: [],
@@ -74,4 +75,5 @@ const ProductsContextProvider = ({ children }) => {
     </productsContext.Provider>
   );
 };
+let sdf = [1, 2, 3];
 export default ProductsContextProvider;
